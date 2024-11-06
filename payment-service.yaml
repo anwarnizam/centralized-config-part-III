@@ -1,4 +1,5 @@
 message: This service shows all the payment information
+orderValue: 50
 
 # Activate actuator refresh endpoint
 management:
