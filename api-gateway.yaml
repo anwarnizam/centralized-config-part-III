@@ -1,0 +1,16 @@
+server:
+  port: 8083
+    
+# Configure routes for the order & payment service.
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: order
+          uri: lb://order-service
+          predicates:
+            - Path=/orders/**
+        - id: payment
+          uri: lb://payment-service
+          predicates:
+          - Path=/payments/**
