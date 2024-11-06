@@ -1,0 +1,8 @@
+message: This service shows all the payment information
+
+# Activate actuator refresh endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
