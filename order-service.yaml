@@ -1,2 +1,9 @@
 message: Hello!!! from the order service
 totalOrders: 20
+
+# Activate actuator refresh endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
