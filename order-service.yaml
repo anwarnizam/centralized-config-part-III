@@ -1,5 +1,5 @@
 message: Hello!!! from the order service
-totalOrders: 20
+totalOrders: 30
 
 # Activate actuator refresh endpoint
 management:
